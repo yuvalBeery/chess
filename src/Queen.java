@@ -31,9 +31,9 @@ public class Queen extends Piece {
 		this.type = Type.QUEEN;
 		this.bitBoard =(color) ? ChessGame.WQ : ChessGame.BQ;
 		if (color)
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\white_queen.png"));
+			this.image = ImageIO.read(new File("images\\white_queen.png"));
 		else
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\black_queen.png"));
+			this.image = ImageIO.read(new File("images\\black_queen.png"));
 		image = image.getScaledInstance(70, 70, Image.SCALE_SMOOTH);
 		smallImage = image.getScaledInstance(28, 28, Image.SCALE_SMOOTH);
 	}

@@ -32,9 +32,9 @@ public class Rook extends Piece {
 		this.type = Type.ROOK;
 		this.bitBoard =(color) ? ChessGame.WR : ChessGame.BR;
 		if (color)
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\white_rook.png"));
+			this.image = ImageIO.read(new File("images\\white_rook.png"));
 		else
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\black_rook.png"));
+			this.image = ImageIO.read(new File("images\\black_rook.png"));
 		image = image.getScaledInstance(70, 70, Image.SCALE_SMOOTH);
 		smallImage = image.getScaledInstance(28, 28, Image.SCALE_SMOOTH);
 	}

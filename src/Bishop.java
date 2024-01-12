@@ -31,9 +31,9 @@ public class Bishop extends Piece {
 		this.type = Type.BISHOP;
 		this.bitBoard =(color) ? ChessGame.WB : ChessGame.BB;
 		if (color)
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\white_bishop.png"));
+			this.image = ImageIO.read(new File("images\\white_bishop.png"));
 		else
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\black_bishop.png"));
+			this.image = ImageIO.read(new File("images\\black_bishop.png"));
 		image = image.getScaledInstance(70, 70, Image.SCALE_SMOOTH);
 		smallImage = image.getScaledInstance(28, 28, Image.SCALE_SMOOTH);
 	}

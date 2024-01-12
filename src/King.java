@@ -51,10 +51,10 @@ public class King extends Piece {
 		this.type = Type.KING;
 		this.bitBoard =(color) ? ChessGame.WK : ChessGame.BK;
 		if (color) {
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\white_king.png"));
+			this.image = ImageIO.read(new File("images\\white_king.png"));
 		}
 		else
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\black_king.png"));
+			this.image = ImageIO.read(new File("images\\black_king.png"));
 		image = image.getScaledInstance(70, 70, Image.SCALE_SMOOTH);
 	}
 

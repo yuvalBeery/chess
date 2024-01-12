@@ -50,9 +50,9 @@ public class Pawn extends Piece {
 		super(row, col, color);
 		this.type = Type.PAWN;
 		if (color)
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\white_pawn.png"));
+			this.image = ImageIO.read(new File("images\\white_pawn.png"));
 		else
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\black_pawn.png"));
+			this.image = ImageIO.read(new File("images\\black_pawn.png"));
 		image = image.getScaledInstance(70, 70, Image.SCALE_SMOOTH);
 		smallImage = image.getScaledInstance(28, 28, Image.SCALE_SMOOTH);
 	}

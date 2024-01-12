@@ -31,9 +31,9 @@ public class Knight extends Piece {
 		this.type = Type.KNIGHT;
 		this.bitBoard =(color) ? ChessGame.WN : ChessGame.BN;
 		if (color)
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\white_knight.png"));
+			this.image = ImageIO.read(new File("images\\white_knight.png"));
 		else
-			this.image = ImageIO.read(new File("D:\\pictures\\chess\\black_knight.png"));
+			this.image = ImageIO.read(new File("images\\black_knight.png"));
 		image = image.getScaledInstance(70, 70, Image.SCALE_SMOOTH);
 		smallImage = image.getScaledInstance(28, 28, Image.SCALE_SMOOTH);
 	}
