@@ -526,9 +526,9 @@ public class GamePanel extends JPanel implements ActionListener, MouseListener {
 		Image whiteKing = null;
 		Image blackKing = null;
 		try {
-			whiteKing = ImageIO.read(new File("D:\\pictures\\chess\\white_king.png"));
+			whiteKing = ImageIO.read(new File("images\\white_king.png"));
 			whiteKing = whiteKing.getScaledInstance(40, 40, Image.SCALE_SMOOTH);
-			blackKing = ImageIO.read(new File("D:\\pictures\\chess\\black_king.png"));
+			blackKing = ImageIO.read(new File("images\\black_king.png"));
 			blackKing = blackKing.getScaledInstance(40, 40, Image.SCALE_SMOOTH);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -915,7 +915,7 @@ public class GamePanel extends JPanel implements ActionListener, MouseListener {
 		List<String> moves = new ArrayList<>();
 		if (moveNum < 7) {
 			try {
-				File myObj = new File("D:\\programing\\java\\chess\\src\\GMGames.txt");
+				File myObj = new File("GMGames.txt");
 				Scanner myReader = new Scanner(myObj);
 				while (myReader.hasNextLine()) {
 					String data = myReader.nextLine();
